@@ -39,11 +39,11 @@ public class MainTest {
         Box<Orange> boxOrange2 = new Box<>();
 
         //Взвешивание коробок--------------------
-        System.out.println("Вес коробки 1 c яблоками: " + getWeight(boxApple1));
-        System.out.println("Вес коробки 2 c яблоками: " + getWeight(boxApple2));
-        System.out.println("Вес коробки 1 c апельсинами: " + getWeight(boxApple2));
-        System.out.println("Вес коробки 3 для яблок (пустой): " + getWeight(boxApple3));
-        System.out.println("Вес коробки 2 для апельсинов (пустой): " + getWeight(boxOrange2));
+        System.out.println("Вес коробки 1 c яблоками:  " + getWeight(boxApple1));
+        System.out.println("Вес коробки 2 c яблоками:  " + getWeight(boxApple2));
+        System.out.println("Вес коробки 1 c апельсинами:  " + getWeight(boxApple2));
+        System.out.println("Вес коробки 3 для яблок (пустой):  " + getWeight(boxApple3));
+        System.out.println("Вес коробки 2 для апельсинов (пустой):  " + getWeight(boxOrange2));
 
         //наполнение пустых коробок--------------
         boxApple3.loadingBox(new Apple(), 8);

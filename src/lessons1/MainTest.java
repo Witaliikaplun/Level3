@@ -34,32 +34,32 @@ public class MainTest {
         Box<Apple> boxApple2 = new Box<>(new Apple(), 20);
         Box<Orange> boxOrange1 = new Box<>(new Orange(), 10);
 
-        //создаем пустые коробки-----------------
+        //создаем пустые коробки------------------
         Box<Apple> boxApple3 = new Box<>();
         Box<Orange> boxOrange2 = new Box<>();
 
-        //Взвешивание коробок--------------------
-        System.out.println("Вес коробки 1 c яблоками:  " + getWeight(boxApple1));
-        System.out.println("Вес коробки 2 c яблоками:  " + getWeight(boxApple2));
-        System.out.println("Вес коробки 1 c апельсинами:  " + getWeight(boxApple2));
-        System.out.println("Вес коробки 3 для яблок (пустой):  " + getWeight(boxApple3));
-        System.out.println("Вес коробки 2 для апельсинов (пустой):  " + getWeight(boxOrange2));
+        //Взвешивание коробок---------------------
+        System.out.println("Вес коробки 1 c яблоками: " + getWeight(boxApple1));
+        System.out.println("Вес коробки 2 c яблоками: " + getWeight(boxApple2));
+        System.out.println("Вес коробки 1 c апельсинами: " + getWeight(boxApple2));
+        System.out.println("Вес коробки 3 для яблок (пустой): " + getWeight(boxApple3));
+        System.out.println("Вес коробки 2 для апельсинов (пустой): " + getWeight(boxOrange2));
 
-        //наполнение пустых коробок--------------
+        //наполнение пустых коробок---------------
         boxApple3.loadingBox(new Apple(), 8);
         boxOrange2.loadingBox(new Orange(), 5);
 
-        //сравнивание веса коробок---------------
+        //сравнивание веса коробок----------------
         System.out.println(boxApple1.compare(boxOrange1));
         System.out.println(boxOrange2.compare(boxApple3));
 
-        //пересыпание из одной коробки в другую---
+        //пересыпание из одной коробки в другую----
         //boxApple1.moveFruitBox(boxOrange1); // ОШИБКА! так как коробки для разных фруктов
         boxApple1.moveFruitBox(boxApple2);
         System.out.println(getWeight(boxApple1));
         System.out.println(getWeight(boxApple2));
 
-        //добавление фруктов в коробку------------
+        //добавление фруктов в коробку-------------
         boxApple2.loadingBox(new Apple(), 33);
         //boxApple2.loadingBox(new Orange(), 7); //ОШИБКА! Нельзя добавить апельсины к яблокам
         System.out.println(getWeight(boxApple2));
